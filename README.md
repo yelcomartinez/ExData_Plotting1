@@ -35,9 +35,9 @@ web site</a>:
 
 ## Code
 
+```ruby
 
-######################PLOT 1######################
-#Read data
+# Read data
 PW <- data.table::fread(input = "household_power_consumption.txt", na.strings="?")
 
 # Put Date Type
@@ -54,9 +54,9 @@ hist(PW[, Global_active_power], main="Global Active Power",
 
 dev.off()
 
-######################PLOT 2######################
 
-#Read data
+
+# Read data
 PW <- data.table::fread(input = "household_power_consumption.txt", na.strings="?")
 
 # Making data readable
@@ -74,9 +74,9 @@ plot(x = PW[, dateTime]
 
 dev.off()
 
-######################PLOT 3######################
 
-#Read data
+
+# Read data
 PW <- data.table::fread(input = "household_power_consumption.txt", na.strings="?")
 
 # Making data readable
@@ -98,9 +98,9 @@ legend("topright"
 
 dev.off()
 
-######################PLOT 4######################
 
-#Read data
+
+# Read data
 PW <- data.table::fread(input = "household_power_consumption.txt", na.strings="?")
 
 # Making data readable
@@ -134,5 +134,5 @@ plot(PW[, dateTime], PW[,Global_reactive_power], type="l", xlab="datetime", ylab
 
 dev.off()
 
-
+```
 
